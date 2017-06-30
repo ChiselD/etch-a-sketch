@@ -1,11 +1,22 @@
 .container {
-	width: 90%;
-	height: 90%;
+	width: 96%;
+	height: 96%;
+	padding: 20px; // this is not working...
+	text-align: center;
+}
+
+#toolbar {
+	text-align: center;
+}
+
+button {
+	margin: 10px;
 }
 
 #grid {
 	width: 900px;
-	height: auto;
+	height: 600px;
+	margin: 0 auto;
 }
 
 .square {
