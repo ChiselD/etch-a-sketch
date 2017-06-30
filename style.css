@@ -1,3 +1,14 @@
-body {
-	background-color: orange;
+.container {
+	width: 90%;
+	height: 90%;
+}
+
+#grid {
+	width: 900px;
+	height: auto;
+}
+
+.square {
+	background-color: gray;
+	border: 1px solid black;
 }
