@@ -1,8 +1,11 @@
 let side = 16; // number of squares per side
 
+// Note to self: this might help for the 'keep-it-square' branch:
+// https://stackoverflow.com/questions/15004537/css-div-alternating-colour
+
 function createGrid() {
 	for (let i = 0; i < (side * side); i++) {
-		$("#grid").append("<div class='square'></div>");
+		$("#grid").append("<div class='square' id='" + i + "'></div>");
 	}
 	$(".square").css("width", 800/side + "px");
 	$(".square").css("height", 800/side + "px");
