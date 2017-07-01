@@ -4,8 +4,8 @@ function createGrid() {
 	for (let i = 0; i < (side * side); i++) {
 		$("#grid").append("<div class='square'></div>");
 	}
-	$(".square").css("width", 900/side);
-	$(".square").css("height", 900/side);
+	$(".square").css("width", 800/side + "px");
+	$(".square").css("height", 800/side + "px");
 }
 
 function paint() {
@@ -14,12 +14,26 @@ function paint() {
 	});
 }
 
+function getNumber() {
+	let userInput = parseInt(prompt("Select number of squares per side"));
+	if (isNaN(userInput) || userInput === null) {
+		alert("That was not a number... how about 16?");
+		side = 16;
+	} else if (userInput > 100) {
+		alert("You cannot have more than 100 squares per side!");
+		side = 16;
+	} else {
+		side = userInput;
+	}
+}
+
 $(document).ready(createGrid());
 $(document).ready(paint());
 
+// "Clear Slate" function that refreshes the canvas and gets a new number of squares
 $("button").on("click", function(){
 	$(".square").removeClass("colorify");
-	side = parseInt(prompt("Select number of squares per side"));
+	getNumber();
 	createGrid();
 	paint();
 })
