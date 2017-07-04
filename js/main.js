@@ -32,7 +32,10 @@ $(document).ready(paint());
 
 // "Clear Slate" function that refreshes the canvas and gets a new number of squares
 $("button").on("click", function(){
-	$(".square").removeClass("colorify");
+	// $(".square").removeClass("colorify");
+	while ($("#grid").firstChild) {
+		$("#grid").removeChild($("#grid").firstChild);
+	}
 	getNumber();
 	createGrid();
 	paint();
