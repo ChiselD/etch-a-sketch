@@ -1,0 +1,1 @@
+This is the “Etch-a-Sketch” project from The Odin Project (theodinproject.com). It is not my original concept, but all my original code.
