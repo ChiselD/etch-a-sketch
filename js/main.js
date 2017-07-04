@@ -4,8 +4,8 @@ function createGrid() {
 	for (let i = 0; i < (side * side); i++) {
 		$("#grid").append("<div class='square'></div>");
 	}
-	$(".square").css("width", 800/side + "px");
-	$(".square").css("height", 800/side + "px");
+	$(".square").css("width", 100/side + "%");
+	$(".square").css("height", 100/side + "%");
 }
 
 function paint() {
