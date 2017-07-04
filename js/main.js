@@ -1,4 +1,6 @@
 let side = 16; // number of squares per side
+// note to self: to do next: work with columns > rows
+// to do so, check this: https://github.com/Demo318/etch-a-sketch
 
 function createGrid() {
 	for (let i = 0; i < (side * side); i++) {
