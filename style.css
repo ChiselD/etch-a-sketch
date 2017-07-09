@@ -18,6 +18,10 @@ button {
 	margin: 0 auto;
 }
 
+.column {
+	float: left;
+}
+
 .square {
 	background-color: lightgray;
 	float: left;
