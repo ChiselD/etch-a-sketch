@@ -1,6 +1,7 @@
 let side = 16; // number of squares per side
-// note to self: to do next: work with columns > rows
-// to do so, check this: https://github.com/Demo318/etch-a-sketch
+// let paintColor = "black";
+
+// for columns/rows, check this: https://github.com/Demo318/etch-a-sketch
 
 function createGrid() {
 	for (let i = 0; i < side; i++) {
@@ -13,6 +14,7 @@ function createGrid() {
 	$(".column").css("height", 800 + "px");
 	$(".square").css("width", 800/side + "px");
 	$(".square").css("height", 800/side + "px");
+	// $(".colorify").css("background-color", paintColor);
 }
 
 function paint() {
@@ -33,6 +35,13 @@ function getNumber() {
 		side = userInput;
 	}
 }
+
+// const colorPicker = document.getElementById("colorpicker");
+// colorPicker.addEventListener("change", watchColorPicker, false);
+
+// function watchColorPicker(event) {
+// 	$(".colorify").css("background-color", event.target.value);
+// }
 
 $(document).ready(createGrid());
 $(document).ready(paint());
