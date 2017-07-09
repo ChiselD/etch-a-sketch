@@ -18,20 +18,14 @@ button {
 	margin: 0 auto;
 }
 
+.column {
+	float: left;
+}
+
 .square {
 	background-color: lightgray;
 	float: left;
 }
-
-/*This chunk below is just for testing; to use it, uncomment it
-and comment out the background color of class .square*/
-
-/*div#grid > div:nth-of-type(odd) {
-    background: gray;
-}
-div#grid > div:nth-of-type(even) {
-    background: lightgray;
-}*/
 
 .colorify {
 	background-color: blue;
